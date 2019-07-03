@@ -1,0 +1,14 @@
+body {
+    background: #111;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background: #900;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    left: 600px;
+    margin: 10px;
+}
