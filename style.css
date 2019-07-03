@@ -5,10 +5,39 @@ body {
 .circle {
     height: 50px;
     width: 50px;
-    background: #900;
+    background: blue;
     border-radius: 50%;
     float: left;
     position: relative;
-    left: 600px;
+    left: 100px;
     margin: 10px;
+    z-index: 0;
+    animation-name: drop-down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop-down {
+    0% {background: blue; top: 0px}
+    100% {background: red; top: 500px;}
+}
+
+#c1 {
+    animation-timing-function: linear;
+}
+
+#c2 {
+    animation-timing-function: ease;
+}
+
+#c3 {
+    animation-timing-function: ease-in;
+}
+
+#c4 {
+    animation-timing-function: ease-out;
+}
+
+#c5 {
+    animation-timing-function: ease-in-out;
 }
