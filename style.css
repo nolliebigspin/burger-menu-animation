@@ -1,3 +1,6 @@
+:root {
+    --burgerColor: white;
+}
 body {
     background: #111;
 }
@@ -16,6 +19,17 @@ body {
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
+
+ .burgerLine {
+     display: block;
+     margin-top: 15px;
+     margin-left: 10px;
+     height: 6px;
+     width: 60px;
+     z-index: 10;
+     transition-property: all;
+     background-color: var(--burgerColor)
+ }
 
 @keyframes drop-down {
     0% {background: blue; top: 0px}
