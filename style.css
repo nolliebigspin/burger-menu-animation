@@ -22,14 +22,18 @@ body {
 
  .burgerLine {
      display: block;
-     margin-top: 15px;
-     margin-left: 10px;
+     margin-bottom: 15px;
      height: 6px;
      width: 60px;
      z-index: 10;
      transition-property: all;
      background-color: var(--burgerColor)
  }
+
+#burgerButton {
+    height: 48px;
+    width: 60px;
+}
 
 @keyframes drop-down {
     0% {background: blue; top: 0px}

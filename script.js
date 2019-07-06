@@ -1,0 +1,1 @@
+var burgerButton = document.documentElement;
