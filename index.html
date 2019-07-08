@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    
+
     <title>CSS-animations | WebTec</title>
 </head>
+
 <body>
 
     <div class="circle" id="c1"></div>
@@ -19,12 +21,19 @@
     <div class="circle" id="c4"></div>
     <div class="circle" id="c5"></div>
 
-    <div id="burgerButton">
-        <span class="burgerLine"></span>
-        <span class="burgerLine"></span>
-        <span class="burgerLine"></span>
+    <div id="burgerButton" onclick="burgerAnimation(this), openMenu(this)">
+        <span class="burgerLine l1"></span>
+        <span class="burgerLine l2"></span>
+        <span class="burgerLine l3"></span>
     </div>
-          
+
+    <div id="menu">
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CLIENTS</a>
+        <a href="#">CONTAC</a>
+    </div>
 
 </body>
+
 </html>

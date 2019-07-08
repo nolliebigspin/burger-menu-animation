@@ -2,7 +2,7 @@
     --burgerColor: white;
 }
 body {
-    background: #111;
+    background: #444;
 }
 
 .circle {
@@ -20,20 +20,25 @@ body {
     animation-fill-mode: forwards;
 }
 
+
+#burgerButton {
+    position: fixed;
+    height: 48px;
+    width: 60px;
+    padding: 20px;
+    z-index: 10;
+}
+
  .burgerLine {
+     position: relative;
      display: block;
      margin-bottom: 15px;
      height: 6px;
      width: 60px;
-     z-index: 10;
+     border-radius: 3px;
      transition-property: all;
      background-color: var(--burgerColor)
  }
-
-#burgerButton {
-    height: 48px;
-    width: 60px;
-}
 
 @keyframes drop-down {
     0% {background: blue; top: 0px}
@@ -58,4 +63,51 @@ body {
 
 #c5 {
     animation-timing-function: ease-in-out;
+}
+
+.fadeOut .l1 {
+    transform: rotate(-45deg) translate(-30px) ;
+    background-color: #444;
+    transition: 0.7s;
+    margin-left: 20px;
+}
+
+.fadeOut .l2 {
+    transform:translate(-30px);
+    opacity: 0;
+    background-color: #444;
+    transition: 0.7s;
+    margin-left: 20px;
+}
+
+.fadeOut .l3 {
+    transform: rotate(45deg) translate(-30px);
+    background-color: #444;
+    transition: 0.7s;
+    margin-left: 20px;
+}
+
+#menu {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    background-color: #FFBA24;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 100px;
+}
+
+#menu a {
+    padding: 8px 8px 8px 220px;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: sans-serif;
+    display: block;
+    color: #444;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: red;
+    text-decoration: underline;
 }
